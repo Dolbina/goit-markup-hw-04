@@ -1,0 +1,365 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --hero-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --logo-text-color: #000000;
+  --button-color: #188ce8;
+  --hero-background: #2f303a;
+  --button-portfolio: #f5f4fa;
+  --footer-color: rgba(255, 255, 255, 0.6);
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+.list {
+  list-style: none;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--hero-text-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* header */
+
+.header{
+  /* line header */
+
+  border-bottom: 1px solid #ececec;
+}
+.logo {
+  margin-right: 93px;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+.logo-wrap {
+  color: var(--logo-text-color);
+}
+.logo-white {
+  color: var(--hero-text-color);
+}
+.nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+
+.current {
+  color: var(--accent-color);
+}
+.mail {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: inherit;
+}
+.mail:hover,
+.mail:focus {
+  color: var(--accent-color);
+}
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+
+
+}
+
+.header-mail {
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
+}
+
+/* hero */
+.hero {
+  background-color: var(--hero-background);
+}
+.hero-title {
+  width: 696px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: var(--hero-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  min-width: 216px;
+  height: 50px;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--hero-text-color);
+  background-color: var(--accent-color);
+  border: none;
+  cursor: pointer;
+}
+.hero-container {
+  display: block;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero-button:hover,
+.hero-button:focus,
+.hero-button:active {
+  background-color: var(--button-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+/* скрити заголовок */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* Особливості */
+.title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.text {
+  line-height: 1.71;
+}
+
+.properties-container {
+  display: flex;
+  gap: 30px;
+}
+
+.list-properties {
+  width: calc((100% - 90px) / 4);
+}
+
+.feature-section{
+padding-bottom: 0;
+}
+/* Чим ми займаємось */
+.section-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-text-color);
+  /* background-color: var(--button-portfolio); */
+}
+
+.section-doing {
+  display: flex;
+  gap: 30px;
+}
+.item-doing {
+  width: calc((100% - 60px) / 3);
+}
+/* Наша команда */
+.section-team {
+  background-color: var(--button-portfolio);
+}
+.card {
+  background-color: var(--hero-text-color);
+  width: calc((100% - 90px) / 4);
+}
+.subtitle {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--title-text-color);
+}
+.section-text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.item-team {
+  display: flex;
+  gap: 30px;
+}
+.sign {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* footer */
+.address {
+  line-height: 1.71;
+  color: var(--footer-color);
+}
+.address-text {
+  color: var(--hero-text-color);
+}
+.mail-footer {
+  display: block;
+  margin-top: 9px;
+  color: var(--footer-color);
+}
+.address-text:hover,
+.address-text:focus,
+.mail-footer:hover,
+.mail-footer:focus {
+  color: var(--accent-color);
+}
+
+.footer-background {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--hero-background);
+}
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+
+/*  портфоліо*/
+.filter-container {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.nav-button {
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--title-text-color);
+  background-color: var(--button-portfolio);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.nav-button:hover,
+.nav-button:focus,
+.nav-button:active {
+  color: var(--hero-text-color);
+  background-color: var(--accent-color);
+}
+.caption {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.text-portfolio {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-text-color);
+}
+
+.filter-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.card-item {
+  width: calc((100% - 60px) / 3);
+}
+.sign-portfolio {
+  display: block;
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
