@@ -118,8 +118,6 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-
-
 }
 
 .header-mail {
@@ -127,6 +125,22 @@ img {
   margin-left: auto;
   gap: 50px;
 }
+
+.icon-mail{
+display: flex;
+align-items: center;
+}
+/* .icon{
+  margin-right: 10px;
+  fill: currentColor;
+}  */
+
+/* .mail-item{
+display: inline-block;
+vertical-align: middle;
+}
+
+
 
 /* hero */
 .hero {
