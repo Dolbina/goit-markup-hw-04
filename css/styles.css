@@ -8,6 +8,7 @@
   --hero-background: #2f303a;
   --button-portfolio: #f5f4fa;
   --footer-color: rgba(255, 255, 255, 0.6);
+  --social-color:#AFB1B8;
 }
 
 .link {
@@ -328,8 +329,65 @@ padding-bottom: 0;
 }
 .sign {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
+.social{
+display: flex;
+gap: 10px;
+justify-content: center;
+align-items: center;
+padding-bottom: 30px;
+}
+.social-link{
+  fill: var(--social-color);
+}
+
+.social-link:hover,
+.social-link:focus{
+  fill: var(--hero-text-color);
+  background-color: var(--accent-color);
+}
+.social-link{
+  display: flex;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+
+}
+/* Постійні клієнти */
+
+.clients{
+display: flex;
+gap: 30px;
+}
+.client-link{
+  display: flex;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border: 1px solid var(--social-color);
+  border-radius: 4px;
+  fill: var(--social-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.client-link{
+color: var(--social-color);
+
+}
+.client-link:hover,
+.client-link:focus{
+color: var(--accent-color);
+
+}
+.client-icon{
+  fill: currentColor;
+}
+
+
 /* footer */
 .address {
   line-height: 1.71;
